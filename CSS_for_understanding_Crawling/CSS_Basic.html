@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>HTML text</title>
+
+		<meta charset = 'utf-8'>
+		
+		<!-- CSS 언어 적용2 : HTML문서 <head>안에 <style> 태그로 넣기 
+
+			- <style> 태그 안에 바꾸길 원하는 tag의  css스타일을 넣으면 
+			- 바꾸고자 하는 tag가 적용된 모든 코드에 css디자인이 적용된다. -->
+		
+		<!--
+		<style type = 'text/css'>
+			td{
+				font-size: 2em;
+				font-family: Gulim;
+				text-align: center;
+			}
+		</style>
+		-->
+
+		<!-- CSS 언어 적용3 : HTML 문서 <head>안에 CSS파일로 링크하기 
+
+			- rel = 'styleshee'과 type = 'text/css' 는 여기서 거의 고정적으로 쓰인다.\
+			- href의 링크에 따라 결정된다. -->
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/style.css'>
+
+	</head>
+
+	<body>
+		<b>Hello HTML!</b><br>
+		<b>안녕 HTML!</b><br>
+		<img src='python-logo.png' id = 'python'>
+		
+
+		<table border = '1' width = '500'>
+
+			<thead>
+				<tr>
+					<!-- CSS 언어 적용1 : 적용할 태그에 style 속성으로 넣기 -->
+					<th style="text-align: center;color: blue">표머리글1</th>
+					<th>표머리글2</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<!-- 개발자 마음대로 CSS 스타일 만들기!
+
+						- 다른 css파일에 .(짓고싶은클래스이름){ css 속성~~ } 이런식으로 코드를 만들어 본파일에 클래스로서 사용할 수 있다. 
+						- 다른 css style과의 우선순위에 주의 
+						- 실제로 웹페이지를 만들때 가장 많이 사용되는 것 중 하나!-->	
+					<td class = 'highlight'>표본문1</td>
+					<td>표본문2</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+	</body>	
+</html>
